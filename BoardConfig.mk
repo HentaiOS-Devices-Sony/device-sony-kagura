@@ -15,9 +15,9 @@
 include device/sony/tone/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %f8331,$(TARGET_PRODUCT)))
+ifneq (,$(filter %hentai_kagura_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := F8331
-else ifneq (,$(filter %f8332,$(TARGET_PRODUCT)))
+else ifneq (,$(filter %hentai_kagura_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := F8332
 # Reserve space for data encryption (55125737472-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 55125721088
@@ -30,6 +30,16 @@ endif
 PRODUCT_PLATFORM := tone
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kagura
+
+#Use Clang instead of Gcc 4.9
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_CLANG_VERSION := r353983c
+
+#kernel
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/sony/msm-4.9/kernel
+TARGET_NEEDS_DTBOIMAGE := false
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
