@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit device parts
-$(call inherit-product, device/sony/kagura/f8332.mk.mk)
+$(call inherit-product, device/sony/kagura/f8332.mk)
 
 # Inherit Hentai os vendor 
 $(call inherit-product, vendor/hentai/config/common_telephony.mk)
