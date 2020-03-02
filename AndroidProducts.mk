@@ -12,12 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_f8331.mk \
-                     $(LOCAL_DIR)/aosp_f8332.mk
+PRODUCT_MAKEFILES :=  \
+    $(LOCAL_DIR)/hentai_kagura_RoW.mk \
+    $(LOCAL_DIR)/hentai_kagura_DSDS.mk
 
 COMMON_LUNCH_CHOICES += \
-    aosp_f8331-eng \
-    aosp_f8331-userdebug \
-    aosp_f8332-eng \
-    aosp_f8332-userdebug
-
+    hentai_kagura_RoW-eng \
+    hentai_kagura_RoW-userdebug \
+    hentai_kagura_RoW-user \
+    hentai_kagura_DSDS-eng \
+    hentai_kagura_DSDS-userdebug \
+    hentai_kagura_DSDS-user \
