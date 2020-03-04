@@ -17,8 +17,12 @@ include device/sony/tone/PlatformConfig.mk
 TARGET_BOOTLOADER_BOARD_NAME := unknown
 ifneq (,$(filter %hentai_kagura_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := F8331
-else ifneq (,$(filter %hentai_kagura_RoW,$(TARGET_PRODUCT)))
+else ifneq (,$(filter %hentai_kagura_DSDS,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := F8332
+else ifneq (,$(filter %hentai_kagura_DSDS_Go,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := F8332
+else ifneq (,$(filter %hentai_kagura_RoW_Go,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := F8331
 # Reserve space for data encryption (55125737472-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 55125721088
 else
