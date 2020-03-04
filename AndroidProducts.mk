@@ -14,7 +14,9 @@
 
 PRODUCT_MAKEFILES :=  \
     $(LOCAL_DIR)/hentai_kagura_RoW.mk \
-    $(LOCAL_DIR)/hentai_kagura_DSDS.mk
+    $(LOCAL_DIR)/hentai_kagura_DSDS.mk \
+    $(LOCAL_DIR)/hentai_kagura_RoW_Go.mk \
+    $(LOCAL_DIR)/hentai_kagura_DSDS_Go.mk \
 
 COMMON_LUNCH_CHOICES += \
     hentai_kagura_RoW-eng \
@@ -23,3 +25,9 @@ COMMON_LUNCH_CHOICES += \
     hentai_kagura_DSDS-eng \
     hentai_kagura_DSDS-userdebug \
     hentai_kagura_DSDS-user \
+    hentai_kagura_RoW_Go-eng \
+    hentai_kagura_RoW_Go-userdebug \
+    hentai_kagura_RoW_Go-user \
+    hentai_kagura_DSDS_Go-eng \
+    hentai_kagura_DSDS_Go-userdebug \
+    hentai_kagura_DSDS_Go-user \
