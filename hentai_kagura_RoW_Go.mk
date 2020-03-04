@@ -26,7 +26,7 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
 
 # Override Product Name
-PRODUCT_NAME := hentai_kagura_RoW
+PRODUCT_NAME := hentai_kagura_RoW_Go
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := kagura
